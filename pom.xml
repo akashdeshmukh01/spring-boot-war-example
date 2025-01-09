@@ -22,7 +22,7 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    <java.version>1.8</java.version>
+    <java.version>1.8</java.version> <!-- You can change this to 11 or above if needed -->
   </properties>
 
   <dependencies>
@@ -35,6 +35,11 @@
       <artifactId>spring-boot-starter-tomcat</artifactId>
       <scope>provided</scope>
     </dependency>
+    <!-- Added Spring Boot Actuator dependency -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-actuator</artifactId>
+    </dependency>
   </dependencies>
 
   <build>
@@ -45,6 +50,5 @@
       </plugin>
     </plugins>
   </build>
-
 
 </project>
